@@ -1,7 +1,8 @@
 var express = require('express'),
     stylus = require('stylus'),
     nib = require('nib'),
-    public = __dirname + "/public";
+    public = __dirname + '/public',
+    stylesheets = __dirname + '/assets/css'
 
 var app = express.createServer();
 
@@ -14,7 +15,8 @@ function compile(str, path) {
 
 app.configure(function() {
     app.use(stylus.middleware({
-        src: public,
+        src: stylesheets,
+        dest: public,
         compile: compile
     }));
     app.use(express.static(public));
@@ -30,7 +32,7 @@ var port = process.env.PORT || 8080;
 
 app.listen(port);
 
-console.log("Server listening on port %d in %s mode",
+console.log('Server listening on port %d in %s mode',
     port,
     app.settings.env
 );
