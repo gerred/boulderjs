@@ -9,7 +9,8 @@
   "private": true,
   "scripts": {
     "dev": "node-dev server",
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "mocha"
   },
   "engines": {
     "node": "0.6.x"
@@ -25,6 +26,7 @@
   },
   "devDependencies": {
     "node-dev": "latest",
-    "mocha": "latest"
+    "mocha": "latest",
+    "should": "latest"
   }
 }
