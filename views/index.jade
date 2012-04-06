@@ -1,1 +1,22 @@
-include layout
+extends layout
+
+block content
+  section.location
+    h1 Location & Schedule
+    .row
+      .span4.offset2
+        a(href="http://g.co/maps/j9qxa", target='new')
+          img(src="/img/maps.png", alt="The Cup, Boulder")
+      .span4
+        h2 The Cup Espresso Cafe
+        address 1521 Pearl Street #B
+        small Boulder, CO, 80302
+        h3.welcome Hack Night
+        p.time Tuesday Nights from 7PM to 9PM
+  section.people
+    h1 People
+    .row
+      .span10.offset1
+        ul.unstyled.people
+          include person
+          include person
