@@ -20,7 +20,8 @@
     "jade": "0.22.x",
     "stylus": "0.25.x",
     "nib": "0.4.x",
-    "redis": "0.7.x"
+    "redis": "0.7.x",
+    "bcrypt": "latest"
   },
   "devDependencies": {
     "node-dev": "latest",
