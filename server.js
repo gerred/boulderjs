@@ -23,7 +23,11 @@ app.configure(function() {
     app.use(express.logger());
 })
 
+var Router = require('./routes/index');
+var router = new Router(app);
+
 var port = process.env.PORT || 8080;
+
 app.listen(port);
 
 console.log("Server listening on port %d in %s mode",

@@ -5,7 +5,7 @@
     "boulderjs.com",
     "www.boulderjs.com"
   ],
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": true,
   "scripts": {
     "dev": "node-dev server",
