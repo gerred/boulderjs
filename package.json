@@ -1,0 +1,25 @@
+{
+  "name": "boulderjs",
+  "subdomain": "boulderjs",
+  "domains": [
+    "boulderjs.com",
+    "www.boulderjs.com"
+  ],
+  "version": "0.0.3",
+  "private": true,
+  "scripts": {
+    "dev": "node-dev server",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "0.6.x"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "2.5.x",
+    "jade": "0.22.x",
+    "stylus": "0.25.x",
+    "nib": "0.4.x",
+    "redis": "0.7.x"
+  }
+}
