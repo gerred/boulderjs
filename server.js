@@ -2,7 +2,7 @@ var express = require('express'),
     stylus = require('stylus'),
     nib = require('nib'),
     public = __dirname + '/public',
-    stylesheets = __dirname + '/assets/css'
+    stylesheets = __dirname + '/assets/css';
 
 var app = express.createServer();
 
@@ -26,7 +26,7 @@ app.configure(function() {
 })
 
 var Router = require('./routes/index');
-var router = new Router(app);
+new Router(app);
 
 var port = process.env.PORT || 8080;
 
@@ -36,3 +36,5 @@ console.log('Server listening on port %d in %s mode',
     port,
     app.settings.env
 );
+
+var http = require('http')
