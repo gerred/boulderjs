@@ -4,7 +4,7 @@ var express = require('express'),
     public = __dirname + '/public',
     stylesheets = __dirname + '/assets/css';
 
-var app = express.createServer();
+var app = module.exports = express.createServer();
 
 function compile(str, path) {
     return stylus(str)
