@@ -17,7 +17,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "express": "2.5.x",
+    "express": "latest",
     "jade": "0.22.x",
     "stylus": "0.25.x",
     "nib": "0.4.x",

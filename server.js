@@ -4,7 +4,7 @@ var express = require('express'),
     public = __dirname + '/public',
     stylesheets = __dirname + '/assets/css';
 
-var app = module.exports = express.createServer();
+var app = module.exports = express();
 
 function compile(str, path) {
     return stylus(str)
@@ -21,7 +21,6 @@ app.configure(function() {
     }));
     app.use(express.static(public));
     app.set('view engine', 'jade');
-    app.set('view options', {layout: false});
     app.use(express.logger());
 })
 
